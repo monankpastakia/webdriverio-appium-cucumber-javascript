@@ -1,0 +1,40 @@
+{
+  "loginPage": {
+    "android": {
+      "logo": {
+        "type": "xpath",
+        "value": "//*[contains(@resource-id, \"/logo\")]"
+      },
+      "username": {
+        "type": "xpath",
+        "value": "//*[contains(@resource-id, \"/username\")]"
+      },
+      "password": {
+        "type": "xpath",
+        "value": "//*[contains(@resource-id, \"/username\")]"
+      },
+      "loginButton": {
+        "type": "xpath",
+        "value": "//*[contains(@resource-id, \"/login_button\")]"
+      }
+    },
+    "ios": {
+      "logo": {
+        "type": "class_chain",
+        "value": "**/XCUIElementTypeImage[`name == \"logo\"`]"
+      },
+      "username": {
+        "type": "class_chain",
+        "value": "**/XCUIElementTypeTextField[`name == \"username\"`]"
+      },
+      "password": {
+        "type": "class_chain",
+        "value": "**/XCUIElementTypeSecureTextField[`name == \"password\"`]"
+      },
+      "loginButton": {
+        "type": "class_chain",
+        "value": "**/XCUIElementTypeButton[`name == \"login\"`]"
+      }
+    }
+  }
+}

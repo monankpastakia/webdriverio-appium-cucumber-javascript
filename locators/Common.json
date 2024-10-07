@@ -1,0 +1,16 @@
+{
+  "tabBar": {
+    "android": {
+      "container": {
+        "type": "xpath",
+        "value": "//*[contains(@resource-id, \"/navigationBar\")]"
+      }
+    },
+    "ios": {
+      "container": {
+        "type": "class_chain",
+        "value": "**/XCUIElementTypeTabBar[`name == \"bottomNavigation\"`]"
+      }
+    }
+  }
+}
